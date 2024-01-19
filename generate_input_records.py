@@ -5,7 +5,6 @@ from mpi4py import MPI
 import lightkurve_utils
 import new_preprocessing
 import time
-#import os
 import sys
 import argparse
 
