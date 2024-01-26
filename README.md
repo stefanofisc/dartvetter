@@ -21,7 +21,9 @@ This section provides an overview on the content of each directory
     - <a href="https://github.com/stefanofisc/dartvetter/tree/main/training/trained_models/dartvetter">trained_models/dartvetter</a>: checkpoint files to load our best model. Build the model and load the optimized weights contained in this file if you do not want to run the training procedure.
 
 ### Installation
-1. Training set generation:\n
+1. Training set generation:
+   
    You might generate the training samples through the generatate_input_records.py file. In this case you need to download the Kepler and TESS light curves from <a href="https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html">Mikulski Archive for Space Telescopes</a>. Otherwise, we provided in the <a href="https://github.com/stefanofisc/dartvetter/tree/main/TFRecord/tfrecord_data">tfrecord_data</a> directory the Kepler and TESS global views we used to train our model.
-2. Training the model: \n
+2. Training the model:
+   
    To train the model, you can use the <a href="https://github.com/stefanofisc/dartvetter/blob/main/training/training_job.slurm">training_job.slurm</a> file. Otherwise, you might build a CNN architecture with the <a href="https://github.com/stefanofisc/dartvetter/blob/main/cnn/cnn_architecture.py">cnn_architecture.py</a> file, save the model and load the optimized weights we made available in <a href="https://github.com/stefanofisc/dartvetter/tree/main/training/trained_models/dartvetter">this</a> directory.
